@@ -25,3 +25,7 @@ spring:
           uri: lb://loancondition-service
           predicates:
             - Path=/api/mortgageLoanCondition/**
+        - id: simulate-service
+          uri: lb://simulate-service
+          predicates:
+            - Path=/api/simulate/**

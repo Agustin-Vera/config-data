@@ -29,3 +29,7 @@ spring:
           uri: lb://simulate-service
           predicates:
             - Path=/api/simulate/**
+        - id: credit-service
+          uri: lb://credit-service
+          predicates:
+            - Path=/api/creditApplication/**

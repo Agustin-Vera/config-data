@@ -33,3 +33,7 @@ spring:
           uri: lb://credit-service
           predicates:
             - Path=/api/creditApplication/**
+        - id: evaluation-service
+          uri: lb://evaluation-service
+          predicates:
+            - Path=/api/evaluation/**

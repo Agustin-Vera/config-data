@@ -40,4 +40,8 @@ spring:
         - id: status-service
           uri: lb://status-service
           predicates:
-            - Path=/api/status/**
+            - Path=/api/states/**
+        - id: document-service
+          uri: lb://document-service
+          predicates:
+            - Path=/api/documents/**

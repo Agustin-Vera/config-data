@@ -1,5 +1,10 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db-loancondition
+    username: postgres
+    password: Admin
 eureka:
   client:
     fetch-registry: true

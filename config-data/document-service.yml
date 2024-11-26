@@ -1,5 +1,15 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db-document
+    username: postgres
+    password: Admin
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
 eureka:
   client:
     fetch-registry: true

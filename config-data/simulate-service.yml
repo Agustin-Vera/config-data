@@ -1,5 +1,5 @@
 server:
-  port: ${SERVER_PORT}
+  port: ${PORT:${SERVER_PORT:0}}
 eureka:
   client:
     fetch-registry: true
@@ -8,5 +8,3 @@ eureka:
       defaultZone: http://eureka-server-service:8761/eureka
   instance:
     preferIpAddress: true
-    nonSecurePort: ${server.port}
-    instance-id: ${spring.application.name}:${server.port}
